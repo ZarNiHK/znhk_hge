@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if(empty($_SESSION['email']))
+{
+    header('location:adminindex.php');
+}
+
+?>
 <!doctype html>
 <html lang="en">
 

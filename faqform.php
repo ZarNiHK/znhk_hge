@@ -1,6 +1,6 @@
 <?php include('adminheader.php');
 include('dbconfig.php');
-$sql = "SELECT * FROM 'users'";
+$sql = "SELECT * FROM 'faq'";
 $result = $conn->query($sql);
 ?>
 
@@ -16,20 +16,6 @@ $result = $conn->query($sql);
          <div class="row">
             <div class="col-md-5">
                 <form action="faqcreate.php" method="post">
-                    <label for="">Username</label>
-                    <select name="user_id" class="form-control" id="">
-                    <?php 
-                    while($row = $result->fetch_assoc())
-                       {
-                    ?>
-                    <option value="<?php echo $row['id'];?>">
-                        <?php echo $row['firstname'];?>
-                    </option>
-                    <?php
-                       }
-                    ?>
-                    </select>
-                    <br>
                     <label for="">Question</label>
                     <textarea name="question" id="" class="form-control" cols="30" rows="10"></textarea>
                     <br>

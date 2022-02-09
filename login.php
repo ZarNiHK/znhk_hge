@@ -9,12 +9,8 @@
             <div class="col-md-4 mx-auto border shadow-sm bg-white rounded p-5">
                 <form action="logincheck.php" method="POST">
                     <div class="mb-3">
-                        <label for="firstname" class="form-label">FirstName</label>
-                        <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="firstname">
-                    </div>
-                    <div class="mb-3">
-                        <label for="surname" class="form-label">SurName</label>
-                        <input type="text" class="form-control" id="surname" name="surname"  aria-describedby="surname">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" aria-describedby="email">
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>

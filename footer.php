@@ -66,10 +66,36 @@
             </div>
         </div>
     </section>
+  
+      <button type="button" class="btn btn-warning position-relative">
+        View Count
+        <span class="position-absolute top-0 start-100 translate-middle-badge rounded-pill bg-danger">
+          <div class="website-counter badge"></div>
+        </span>
+      </button>
+   
 </footer>
 <script type="text/javascript" id="cookieinfo"
 src="//cookieinfoscript.com/js/cookieinfo.min.js" data-bg="#645862" data-fg="#FFFFFF" data-link="#F1D600" data-cookie="My Cookies Information" data-text-align="left" data-close-text="Got it">
 
+</script>
+<script>
+  var counterContainer = document.querySelector(".website-counter");
+  var resetButton = document.querySelector("#reset");
+  var visitCount = localStorage.getItem("page_view");
+  if(visitCount) {
+    visitCount = Number(visitCount) + 1;
+    localStorage.setItem("page_view", visitCount);
+  } else{
+    visitCount = 1
+    localStorage.setItem("page_view", 1);
+  }
+  counterContainer.innerHTML = visitCount;
+  resetButton.addEventListener("click", () => {
+    visitCount = 1;
+    localStorage.setItem("page_view", 1);
+    counterContainer.innerHTML = visitCount;
+  });
 </script>
   </body>
 </html>

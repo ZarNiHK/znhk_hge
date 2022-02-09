@@ -2,17 +2,16 @@
 session_start();
 include('dbconfig.php');
 
-$firstname = $_POST['firstname'];
-$surname = $_POST['surname'];
+$email = $_POST['email'];
 $password = $_POST['password'];
 
-$sql = "SELECT * FROM users WHERE `firstname`='".$firstname."' AND `surname`='".$surname."' AND `password`='".$password."'";
+$sql = "SELECT * FROM users WHERE `email`='".$email."' AND `password`='".$password."'";
 $result = $conn->query($sql);
 if($result->num_rows > 0)
 {
     $row = $result->fetch_assoc();
-    $_SESSION['firstname'] = $row['firstname'];
-    header('location:loginsuccess.php');
+    $_SESSION['email'] = $row['email'];
+    header('location:userindex.php');
 }
 else{
     header('location:login.php');

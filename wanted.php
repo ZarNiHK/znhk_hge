@@ -1,6 +1,6 @@
 <?php include('header.php');?>
 <img src="images/gymequipment.jpg" class="img-fluid" alt="responsive image">
-<div class="container py-1">
+<div class="container py-5">
     <div class="row">
         <div class="col-md-12 text-center">
             <h3>

@@ -7,48 +7,51 @@
         How Can We Help You?
       </h3>
       <p>
-        We are willingly to help you. If you want to know something about fitness, fill out our contact form.
+        We are willingly to help you If you want to know something about fitness.
       </p>
     </div>
   </div>
 </div>
 
-  <div class="container py-3">
+  <div class="container">
     <div class="row">
-      <div class="col-md-5">
-  <form>
-  <!-- Name input -->
-  <div class="form-outline mb-4">
-    <input type="text" id="form4Example1" class="form-control" />
-    <label class="form-label" for="form4Example1">Name</label>
-  </div>
+      <div class="col-md-12">
+        <?php
+           include('dbconfig.php');
 
-  <!-- Email input -->
-  <div class="form-outline mb-4">
-    <input type="email" id="form4Example2" class="form-control" />
-    <label class="form-label" for="form4Example2">Email address</label>
+           $sql = "SELECT * FROM faq";
+           $result = $conn->query($sql);
+        ?>
+        <?php
+                    if($result->num_rows > 0)
+                    {
+                ?>
+                        <?php
+                            while($row = $result->fetch_assoc())
+                            {
+                        ?>
+                            <div class="card">
+                              <div class="card-body">
+                                <h4 class="card=title">Question</h4>
+                                <p class="card-text">
+                                  <?php echo $row['question'];?>
+                                </p>
+                              </div>
+                              <div class="card-footer text-muted">
+                                  <?php echo $row['answer'];?>
+                              </div>
+                            </div>
+                        <?php
+                            }
+                        ?>
+                    <?php
+                    }else{
+                        echo "There is no records.";
+                    }
+                ?>
+      </div>
+    </div>
   </div>
-
-  <!-- Message input -->
-  <div class="form-outline mb-4">
-    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-    <label class="form-label" for="form4Example3">Message</label>
-  </div>
-
-  <!-- Checkbox -->
-  <div class="form-check d-flex justify-content-center mb-4">
-    <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
-    <label class="form-check-label" for="form4Example4">
-      Send me a copy of this message
-    </label>
-  </div>
-
-  <!-- Submit button -->
-  <a href="#"><button type="submit" class="btn btn-primary btn-block mb-4">Send</button></a>
-</form>
-</div>
-</div>
-</div>
 <div class="container py-4">
   <div class="row">
     

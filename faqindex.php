@@ -1,7 +1,7 @@
 <?php 
     include('adminheader.php');
     include('dbconfig.php');
-    $sql = "SELECT faq.*,users.firstname FROM `faq` INNER JOIN users ON faq.user_id = users.id";
+    $sql = "SELECT * FROM faq";
     $result = $conn->query($sql);
 ?>
 
@@ -12,20 +12,20 @@
         <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
             <div
                 class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h2">FAQs</h1>
+                <h1 class="h2">FAQ</h1>
 
             </div>
 
             <div class="row">
                 <div class="col-md-12">
-                    <a href="adduser.php" class="btn btn-success">Add More</a>
+                    <a href="faqform.php" class="btn btn-success">Add FAQ</a>
                     <?php
                     if($result->num_rows > 0)
                     {
                 ?>
                     <table class="table">
                         <tr>
-                            <th>User Name</th>
+                            
                             <th>Question</th>
                             <th>Answer</th>
                             <th></th>
@@ -35,13 +35,13 @@
                             {
                         ?>
                         <tr>
-                            <td><?php echo $row['firstname']?></td>
+                            
                             <td class="w-25"><?php echo $row['question'];?></td>
                             <td class="w-25"><?php echo $row['answer'];?></td>
                             <td>
-                                <a href="delete.php?id=<?php echo $row['id'];?>" class="btn btn-danger">Delete</a>
+                                <a href="faqdelete.php?id=<?php echo $row['id'];?>" class="btn btn-danger">Delete</a>
 
-                                <a href="edituser.php?id=<?php echo $row['id'];?>" class="btn btn-primary">Edit</a>
+                                <a href="faqedit.php?id=<?php echo $row['id'];?>" class="btn btn-primary">Edit</a>
                             </td>
                         </tr>
                         <?php
