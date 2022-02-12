@@ -16,7 +16,7 @@
   <div class="card-body">
     <h5 class="card-title">Sporzon Iron Plate</h5>
     <p class="card-text">Price - $82.99</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -26,7 +26,7 @@
   <div class="card-body">
     <h5 class="card-title">Barbell</h5>
     <p class="card-text">Price - $22.99</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -36,7 +36,7 @@
   <div class="card-body">
     <h5 class="card-title">Everyday Essentials</h5>
     <p class="card-text">Price - $50.81</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -46,7 +46,7 @@
   <div class="card-body">
     <h5 class="card-title">Xavier Plate</h5>
     <p class="card-text">Price - $229.30</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>

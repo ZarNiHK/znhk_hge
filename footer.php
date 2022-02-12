@@ -48,6 +48,10 @@
           </p>
           <p>044 120 0783</p>
           <p>050 646 6767</p>
+          <a class="fs-5 px-2 link-white" href="https://www.facebook.com/"><i class="bi-facebook"></i></a>
+          <a class="fs-5 px-2 link-white" href="https://www.twitter.com/"><i class="bi-twitter"></i></a>
+          <a class="fs-5 px-2 link-white" href="https://www.instagram.com/"><i class="bi-instagram"></i></a>
+
         </div>
         
       </div>

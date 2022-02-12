@@ -17,7 +17,7 @@
         <p class="card-text">Grid Type - Knurled</p>
         <p class="card-text">Size - 20ml</p>
         <p class="card-text">Price - $109.80</p>
-        <a href="#" class="btn btn-warning">Order</a>
+        <a href="#" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -30,7 +30,7 @@
     <p class="card-text">Grid Type - Knurled</p>
     <p class="card-text">Size - 30ml</p>
     <p class="card-text">Price - $115.90</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -43,7 +43,7 @@
     <p class="card-text">Grid Type - Knurled</p>
     <p class="card-text">Weight - 44Pounds</p>
     <p class="card-text">Price - $135.44</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -56,7 +56,7 @@
     <p class="card-text">Grid Type - Knurled</p>
     <p class="card-text">Size - 28ml</p>
     <p class="card-text">Price - $150.20</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -72,7 +72,7 @@
     <p class="card-text">Grid Type - Knurled</p>
     <p class="card-text">Grip Size - 1inch</p>
     <p class="card-text">Price - $142.52</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
      </div>

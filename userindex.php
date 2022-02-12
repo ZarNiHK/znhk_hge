@@ -17,7 +17,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <a href="useradd.php" class="btn btn-success">Add User</a>
+                    <a href="userform.php" class="btn btn-warning">Add User</a>
                     <?php
                     if($result->num_rows > 0)
                     {
@@ -40,7 +40,7 @@
                             <td>
                                 <a href="userdelete.php?id=<?php echo $row['id'];?>" class="btn btn-danger">Delete</a>
 
-                                <a href="edituser.php?id=<?php echo $row['id'];?>" class="btn btn-primary">Edit</a>
+                                <a href="useredit.php?id=<?php echo $row['id'];?>" class="btn btn-primary">Edit</a>
                             </td>
                         </tr>
                         <?php

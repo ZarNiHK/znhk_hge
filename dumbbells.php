@@ -14,7 +14,7 @@
   <div class="card-body">
     <h5 class="card-title">10kg Gym Hexagon</h5>
     <p class="card-text">Price - $24.54</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -24,7 +24,7 @@
   <div class="card-body">
     <h5 class="card-title">24kg Dumbbells</h5>
     <p class="card-text">Price - $46.85</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -34,7 +34,7 @@
   <div class="card-body">
     <h5 class="card-title">Tianjin</h5>
     <p class="card-text">Price - $1.54</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -44,7 +44,7 @@
   <div class="card-body">
     <h5 class="card-title">Multi Functional Adjustable</h5>
     <p class="card-text">Price - $12.54</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>

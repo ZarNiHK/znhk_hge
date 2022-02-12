@@ -32,10 +32,10 @@
                         ?>
                             <div class="card">
                               <div class="card-body">
-                                <h4 class="card=title">Question</h4>
-                                <p class="card-text">
+                                
+                                <h4 class="card-text">
                                   <?php echo $row['question'];?>
-                                </p>
+                            </h4>
                               </div>
                               <div class="card-footer text-muted">
                                   <?php echo $row['answer'];?>

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-darkorange">
@@ -25,7 +27,7 @@
           <a class="nav-link" href="information.php">Information</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="wanted.php">Wanted</a>
+          <a class="nav-link" href="wanted.php">Second Hand Products</a>
           </li>
           <li class="nav-item">
           <a class="nav-link" href="workshop.php">Workshop</a>

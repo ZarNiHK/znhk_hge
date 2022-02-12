@@ -15,7 +15,7 @@
     <h5 class="card-title">Lijiujia 2022</h5>
     <p class="card-text">Color - Black, White</p>
     <p class="card-text">Price - $290.00</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -26,7 +26,7 @@
     <h5 class="card-title">SuperMove</h5>
     <p class="card-text">Color - Black, White, Silver</p>
     <p class="card-text">Price - $115.00</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -37,7 +37,7 @@
     <h5 class="card-title">Commercial Machine</h5>
     <p class="card-text">Color - Black</p>
     <p class="card-text">Price - $800.00</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -48,7 +48,7 @@
     <h5 class="card-title">HonTuBom</h5>
     <p class="card-text">Color - Black, White</p>
     <p class="card-text">Price - $190.00</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="wanted.php" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -62,7 +62,7 @@
     <h5 class="card-title">WuxiLotus</h5>
     <p class="card-text">Color - Black, White, Red</p>
     <p class="card-text">Price - $1482.00</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="#" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>
@@ -73,7 +73,7 @@
     <h5 class="card-title">DPAO</h5>
     <p class="card-text">Color - White</p>
     <p class="card-text">Price - $155.99</p>
-    <a href="#" class="btn btn-warning">Order</a>
+    <a href="#" class="btn btn-warning">More</a>
   </div>
 </div>
     </div>

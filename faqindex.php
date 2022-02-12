@@ -18,7 +18,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <a href="faqform.php" class="btn btn-success">Add FAQ</a>
+                    <a href="faqform.php" class="btn btn-warning">Add FAQ</a>
                     <?php
                     if($result->num_rows > 0)
                     {

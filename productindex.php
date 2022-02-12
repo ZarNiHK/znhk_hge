@@ -16,7 +16,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <a href="productform.php" class="btn btn-success">Add Products</a>
+                    <a href="productform.php" class="btn btn-warning">Add Products</a>
                     <?php
                     if($result->num_rows > 0)
                     {
@@ -41,7 +41,7 @@
                             <td>
                                 <a href="productdelete.php?id=<?php echo $row['id'];?>" class="btn btn-danger">Delete</a>
 
-                                <a href="edituser.php?id=<?php echo $row['id'];?>" class="btn btn-primary">Edit</a>
+                                <a href="productedit.php?id=<?php echo $row['id'];?>" class="btn btn-primary">Edit</a>
                             </td>
                         </tr>
                         <?php
