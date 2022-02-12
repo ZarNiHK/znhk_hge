@@ -11,10 +11,10 @@
     // echo $image;
     if($image) {
     move_uploaded_file($tmp, "/uploads/$image");
-    $sql = "UPDATE `product` SET `name` = '".$name."',`price` = '".$price."',`description` = '".$description."',`images` = '".$_FILES["images"]["name"]."' WHERE `id` = ".$id;
+    $sql = "UPDATE `products` SET `name` = '".$name."',`price` = '".$price."',`description` = '".$description."',`images` = '".$_FILES["images"]["name"]."' WHERE `id` = ".$id;
     }
     else{
-    $sql = "UPDATE `product` SET `name` = '".$name."',`price` = '".$price."',`description` = '".$description."' WHERE `id` = ".$id;
+    $sql = "UPDATE `products` SET `name` = '".$name."',`price` = '".$price."',`description` = '".$description."' WHERE `id` = ".$id;
     }
 
    
