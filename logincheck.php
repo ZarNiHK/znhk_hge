@@ -11,7 +11,7 @@ if($result->num_rows > 0)
 {
     $row = $result->fetch_assoc();
     $_SESSION['email'] = $row['email'];
-    header('location:productindex.php');
+    header('location:adminindex.php');
 }
 else{
     header('location:login.php');
