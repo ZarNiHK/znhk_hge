@@ -1,10 +1,11 @@
-<?php
-    include('dbconfig.php');
+<?php 
     
+    include('dbconfig.php');
+
     $id = $_GET['id'];
 
-    $sql = "DELETE FROM faq WHERE id = ".$id;
-    $result = $conn->query($sql);
+    $sql = "DELETE  FROM faq WHERE id = ".$id;
+    
 
     if($conn->query($sql) == TRUE){
         header('location:faqindex.php');

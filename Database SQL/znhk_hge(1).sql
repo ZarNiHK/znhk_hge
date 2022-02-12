@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 10, 2022 at 01:38 PM
+-- Generation Time: Feb 12, 2022 at 02:19 PM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -28,17 +28,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `faq` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
   `question` text NOT NULL,
   `answer` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `faq`
 --
 
-INSERT INTO `faq` (`id`, `question`, `answer`) VALUES
-(2, '                    qwe212312                               ', '                    1qweq21                           ');
+INSERT INTO `faq` (`id`, `user_id`, `question`, `answer`) VALUES
+(6, 24, 'qweqeqwe', 'qweqweqw'),
+(7, 23, 'rqwrwrqwr', 'wrwqqqw');
 
 -- --------------------------------------------------------
 
@@ -53,14 +55,20 @@ CREATE TABLE IF NOT EXISTS `products` (
   `description` text NOT NULL,
   `images` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `products`
 --
 
 INSERT INTO `products` (`id`, `name`, `price`, `description`, `images`) VALUES
-(2, 'GG', 100, 'qwerwrt', '83595927_153143519453450_6295920244842037248_n.jpg');
+(3, 'A17 Pulldown Machine', 160, '                                                        Weight machine with a seat and brace for the thighs.                                        ', 'pulldown.jpg'),
+(4, 'HyperExtension Bench', 49, 'A compact, easy to use piece of gym equipment with the ability to improve posture and increase lower back strength.', 'hyperbench.jpg'),
+(5, '12kg KettleBell', 15, 'Used for exercise and weight training. Weigh 12kg.', 'kettlebell.jpg'),
+(6, 'Lijiujia 2022', 290, 'Black, White Color. Lijiujia treadmill are versatile pieces of equipment that are placed in homes as well as gyms and fitness centers. They are basic but indispensable. ', 'tm1.webp'),
+(7, '10kg Gym Hexagon', 25, 'A short bar with weights on either side which people use for physical exercise to strengthen their arm and shoulder muscles.', 'db1.webp'),
+(8, 'Sporzon Iron Plate', 83, 'Cast Iron Weight Plates', 'p1.jpg'),
+(9, 'Annzoe', 110, 'Rechargeable electric chain saw, light and portable, long battery life, no damage to the bark. Lightweight body, small size, can be held with one hand, long time holding and not tired hands.', 'op1.jpg');
 
 -- --------------------------------------------------------
 
@@ -75,14 +83,16 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=23 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=25 ;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `firstname`, `surname`, `email`, `password`) VALUES
-(22, 'haha', 'haha', 'haha@gmail.com', 'haha');
+(22, 'Zar', 'Ni', 'zarni@gmail.com', 'zarni'),
+(23, 'Kyaw', 'Kyaw', 'kyawkyaw@gmail.com', 'kyawkyaw'),
+(24, 'Yu', 'Yu', 'yuyu@gmail.com', 'yuyu');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

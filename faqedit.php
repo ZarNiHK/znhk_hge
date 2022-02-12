@@ -2,10 +2,11 @@
     include('adminheader.php');
     include('dbconfig.php');
     $id = $_GET['id'];
-    $sql = "SELECT * FROM faq WHERE id=".$id;
+    $sql = "SELECT faq.*,users.firstname FROM `faq` INNER JOIN users ON faq.user_id = users.id WHERE faq.id=".$id;
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
 ?>
+
 
 <div class="container-fluid">
     <div class="row">
@@ -21,18 +22,39 @@
             <div class="row">
                 <div class="col-md-12">
                 <form action="faqupdate.php?id=<?php echo $row['id'];?>" method="post">
-                    <label for="">Question</label>
-                    <textarea name="question" id="" class="form-control" cols="30" rows="10">
-                    <?php echo $row['question'];?>
-                    </textarea>
-                    <br>
-                    <label for="">Answer</label>
-                    <textarea name="answer" id="" class="form-control" cols="30" rows="10">
-                    <?php echo $row['answer'];?>
-                    </textarea>
-                    <br>
-                    <input type="submit" class="btn btn-success" value="Save FAQ">
-                </form>
+                        <label for="">Username</label>
+                        <?php
+                            $user_sql = "SELECT * FROM users";
+                            $user_result = $conn->query($user_sql);
+                        ?>
+                         <select name="user_id" class="form-control" id="">
+                            <?php
+                                while($user_row = $user_result->fetch_assoc())
+                                {
+                            ?>
+                            <option value="<?php echo $user_row['id'];?>"<?php echo ($user_row['id'] == $row['user_id'])?"selected":"";?>>
+                                <?php echo $user_row['firstname']; ?>
+                        </option>
+                        <?php
+                                }
+                        ?>
+                        </select>
+                        <br>
+                        <label for="">Question</label>
+                        <textarea name="question" id="" class="form-control" cols="30" rows="10">
+                            <?php echo $row['question'];?>
+                        </textarea>
+                        <br>
+                        <label for="">Answer</label>
+                        <textarea name="answer" id="" class="form-control" cols="30" rows="10">
+                            <?php echo $row['answer'];?>
+                        </textarea>
+                        <br>
+                        <input type="submit" class="btn btn-success" value="Save FAQ">
+                        
+
+                    </form>
+                    
                 </div>
             </div>
         </main>

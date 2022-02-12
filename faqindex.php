@@ -1,7 +1,7 @@
 <?php 
     include('adminheader.php');
     include('dbconfig.php');
-    $sql = "SELECT * FROM faq";
+    $sql = "SELECT faq.*,users.firstname FROM `faq` INNER JOIN users ON faq.user_id = users.id";
     $result = $conn->query($sql);
 ?>
 
@@ -18,14 +18,14 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <a href="faqform.php" class="btn btn-warning">Add FAQ</a>
+                    <a href="faqform.php" class="btn btn-success">Add FAQ</a>
                     <?php
                     if($result->num_rows > 0)
                     {
                 ?>
                     <table class="table">
                         <tr>
-                            
+                            <th>User Name</th>
                             <th>Question</th>
                             <th>Answer</th>
                             <th></th>
@@ -35,7 +35,7 @@
                             {
                         ?>
                         <tr>
-                            
+                            <td><?php echo $row['firstname']?></td>
                             <td class="w-25"><?php echo $row['question'];?></td>
                             <td class="w-25"><?php echo $row['answer'];?></td>
                             <td>

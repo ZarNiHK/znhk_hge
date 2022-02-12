@@ -20,6 +20,8 @@
            include('dbconfig.php');
 
            $sql = "SELECT * FROM faq";
+           $sql = "SELECT faq.*,users.firstname,users.surname FROM `faq` INNER JOIN users ON faq.user_id = users.id";
+
            $result = $conn->query($sql);
         ?>
         <?php
@@ -30,17 +32,20 @@
                             while($row = $result->fetch_assoc())
                             {
                         ?>
-                            <div class="card">
-                              <div class="card-body">
-                                
-                                <h4 class="card-text">
-                                  <?php echo $row['question'];?>
-                            </h4>
-                              </div>
-                              <div class="card-footer text-muted">
-                                  <?php echo $row['answer'];?>
-                              </div>
+                          <div class="card">
+                            <div class="card-header">
+                            <?php echo $row['firstname'].'-'.$row['surname'];?>
                             </div>
+                            <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                            <p><?php echo $row['question'];?></p>
+                             <footer class="blockquote-footer">
+                            <?php echo $row['answer'];?>
+                             </footer>
+                            </blockquote>
+                            </div>
+                          </div>
+
                         <?php
                             }
                         ?>

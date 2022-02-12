@@ -27,7 +27,7 @@
           <a class="nav-link" href="information.php">Information</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="wanted.php">Second Hand Products</a>
+          <a class="nav-link" href="wanted.php">Account</a>
           </li>
           <li class="nav-item">
           <a class="nav-link" href="workshop.php">Workshop</a>
@@ -50,8 +50,8 @@
           <a class="nav-link" href="featured.php">Featured</a>
           </li>
         </ul>
-          <form class="d-flex">
-          <input class="form-control me-2" name="name" action="search.php"type="search" placeholder="Search" aria-label="Search">
+          <form class="d-flex" action="search.php" method="post">
+          <input class="form-control me-2" name="name" type="search"type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-dark" type="submit">Search</button>
           </form>
         </div>
