@@ -4,7 +4,7 @@
 if (isset($_POST['login'])){
     $email = $_POST['email'];
     $password = $_POST['password'];
-    include ("dbconfig.php");
+    include ('dbconfig.php');
     $atmp = $_POST['hidden'];
     if($atmp<3){
     $query  = "SELECT * FROM users WHERE `email`='".$email."' AND `password`='".$password."'";
@@ -17,16 +17,15 @@ if (isset($_POST['login'])){
         }
         else{
             $atmp++;
-            echo '<script> alert("You have invalid username/password and the number of attempt is '. $atmp .'");window.location = "login.php";</script>';
+            echo '<script> alert("You have invalid email/password and the number of attempt is '. $atmp .'");</script>';
         }
     }    
 }
 if ($atmp==3) {
-    echo '<script> alert("You have invalid username/password!");window.location = "register.php";</script>';
+    echo '<script> alert("You have invalid email/password!");window.location = "register.php";</script>';
   }
  }
 ?>
-
   <div class="container">
         <div class="row">
             <div class="col-md-4 mx-auto text-center " style="margin-top:50px;">
@@ -35,10 +34,10 @@ if ($atmp==3) {
         </div>
         <div class="row">
             <div class="col-md-4 mx-auto border shadow-sm bg-white rounded p-5">
-                <form action="logincheck.php" method="POST">
+                <form action="" method="POST">
                 <?php
-                    echo "<input type = 'hidden' name = 'hidden' value =  '".$atmp."'>";
-                ?>
+echo "<input type = 'hidden' name = 'hidden' value =  '".$atmp."'>";
+    ?>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="text" class="form-control" id="email" name="email" aria-describedby="email">
