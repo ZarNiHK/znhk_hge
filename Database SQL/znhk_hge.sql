@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 12, 2022 at 02:19 PM
+-- Generation Time: Feb 16, 2022 at 01:45 PM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -39,8 +39,8 @@ CREATE TABLE IF NOT EXISTS `faq` (
 --
 
 INSERT INTO `faq` (`id`, `user_id`, `question`, `answer`) VALUES
-(6, 24, 'qweqeqwe', 'qweqweqw'),
-(7, 23, 'rqwrwrqwr', 'wrwqqqw');
+(6, 24, 'What are Kettlebells?               ', 'From Wikipedia, the free encyclopedia:\r\nâ€œThe kettlebell or girya (Russian: Ã£Ã¨Ã°Ã¿) is a traditional Russian cast-iron weight looking somewhat like a cannonball with a handleâ€â€¦..â€Kettlebell workouts are intended to increase strength, endurance, agility and balance, challenging both the muscular and cardiovascular system with dynamic, total-body movementsâ€                   '),
+(7, 23, 'What are the differences between weight plates?', 'Weight plate selection is usually based on user preference and price. Commercial options include Tri Grip, (easier to handle) Rubber Coated and plain cast Metal. All of these are extremely durable. Calibrated plates are used for competition. Their weight is very accurate, (to within 5gms) and they tend to be very expensive due to this. Weights stocked by Gymwarehouse display their mass in both Kg and Lb.\r\nSome domestic options are available which are sand or water filled. These tend to be bulky and very disappointing.');
 
 -- --------------------------------------------------------
 
@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=25 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=27 ;
 
 --
 -- Dumping data for table `users`
@@ -92,7 +92,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`id`, `firstname`, `surname`, `email`, `password`) VALUES
 (22, 'Zar', 'Ni', 'zarni@gmail.com', 'zarni'),
 (23, 'Kyaw', 'Kyaw', 'kyawkyaw@gmail.com', 'kyawkyaw'),
-(24, 'Yu', 'Yu', 'yuyu@gmail.com', 'yuyu');
+(24, 'Yu', 'Yu', 'yuyu@gmail.com', 'yuyu'),
+(25, 'zar', 'nihk', 'zarnihk@gmail.com', 'zarnihk'),
+(26, 'john', 'john', 'john@gmail.com', 'john');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
